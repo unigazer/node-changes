@@ -6,7 +6,7 @@ Whenever Node releases a new version of the framework I want to read the changel
 
 # Install
 ```bash
-npm i -g noder
+npm i -g node-changes
 ```
 
 # Usage
