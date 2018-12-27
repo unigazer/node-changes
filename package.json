@@ -1,0 +1,23 @@
+{
+  "name": "noder",
+  "version": "1.0.0",
+  "description": "Prints the changelog for current or for the specific version of Node.js relase.",
+  "preferGlobal": true,
+  "bin": {
+    "noder": "index.js"
+  },
+  "keywords": [
+    "changelog",
+    "node",
+    "cli",
+    "command line"
+  ],
+  "author": "Vladimir Jovanović",
+  "license": "CC BY 3.0",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "markdown-cli": "^1.6.0"
+  }
+}
