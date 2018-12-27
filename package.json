@@ -12,6 +12,14 @@
     "cli",
     "command line"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VladimirDev93/noder"
+  },
+  "bugs": {
+    "url": "https://github.com/VladimirDev93/noder/issues"
+  },
+  "homepage": "https://github.com/VladimirDev93/noder",
   "author": "Vladimir Jovanović",
   "license": "CC BY 3.0",
   "dependencies": {
