@@ -2,7 +2,7 @@
 
 Get the release changelog right from your terminal!
 
-Whenever Node releases a new version of the framework I want to read the changelog, and then I thought: "Why not make changelogs supernerdy so that I can read the changelog right from my terminal?". And then it happened. I decided to read the GitHub v3 RESTful API and created a CLI tool that let's your read the changelog for your local Node version or for a specific node version.
+Whenever Node releases a new version of the framework I want to read the changelog, and then I thought: "Why not make changelogs supernerdy so that I can read the changelog right from my terminal?". And then it happened. I decided to read the GitHub v3 RESTful API and created a CLI tool that lets you read the changelog for your local Node version or for a specific node version.
 
 # Install
 ```bash
@@ -10,7 +10,7 @@ npm i -g node-changes
 ```
 
 # Usage
-```bash
+```
 Usage: noder [options]
 
 Options:
@@ -19,7 +19,7 @@ Options:
 ```
 
 # Example
-```bash
+```
 $ noder -t v10.5.0
 
 Changelog for v10.5.0 
