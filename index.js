@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // Imports
-const axios = require('axios');
+const got = require('got');
 const markdown = require('markdown-cli');
 const program = require('commander');
 const chalk = require('chalk');
@@ -11,10 +11,10 @@ var localVer = process.version;
 
 // Get the release log
 async function getChangelog(tag) {
-    const json = await axios.get(`https://api.github.com/repos/nodejs/node/releases/tags/${tag}`)
+    const json = await got(`https://api.github.com/repos/nodejs/node/releases/tags/${tag}`)
     try {
         console.log(chalk.bgGreen(chalk.black(`\n Changelog for ${tag} \n`)));
-        console.log(`${markdown(json.data.body)}`);
+        console.log(`${markdown(JSON.parse(json.body).body)}`);
     } catch (error) {
         return console.error(error)
     }
