@@ -1,10 +1,10 @@
 {
   "name": "node-changes",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Prints the changelog for current or for the specific version of Node.js relase.",
   "preferGlobal": true,
   "bin": {
-    "noder": "index.js"
+    "node-changes": "index.js"
   },
   "keywords": [
     "changelog",
