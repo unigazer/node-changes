@@ -14,12 +14,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/VladimirDev93/noder"
+    "url": "https://github.com/VladimirDev93/node-changes"
   },
   "bugs": {
-    "url": "https://github.com/VladimirDev93/noder/issues"
+    "url": "https://github.com/VladimirDev93/node-changes/issues"
   },
-  "homepage": "https://github.com/VladimirDev93/noder",
+  "homepage": "https://github.com/VladimirDev93/node-changes",
   "author": "Vladimir Jovanović",
   "license": "CC BY 3.0",
   "dependencies": {
