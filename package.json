@@ -24,7 +24,7 @@
   "license": "CC BY 3.0",
   "dependencies": {
     "chalk": "^2.4.2",
-    "commander": "^2.19.0",
+    "commander": "^3.0.1",
     "got": "^9.6.0",
     "markdown-cli": "^1.6.0"
   }
