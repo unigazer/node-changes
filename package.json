@@ -23,7 +23,7 @@
   "author": "Vladimir Jovanović",
   "license": "CC BY 3.0",
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^3.0.0",
     "commander": "^2.19.0",
     "got": "^9.6.0",
     "markdown-cli": "^1.6.0"
