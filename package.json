@@ -25,7 +25,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
-    "got": "^9.6.0",
+    "got": "^10.0.3",
     "markdown-cli": "^1.6.0"
   }
 }
