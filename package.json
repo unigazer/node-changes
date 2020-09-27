@@ -1,6 +1,6 @@
 {
   "name": "node-changes",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Prints the changelog for current or for the specific version of Node.js relase.",
   "preferGlobal": true,
   "bin": {
