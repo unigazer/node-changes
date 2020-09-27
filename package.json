@@ -14,18 +14,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/VladimirDev93/node-changes"
+    "url": "https://github.com/whyseman/node-changes"
   },
   "bugs": {
-    "url": "https://github.com/VladimirDev93/node-changes/issues"
+    "url": "https://github.com/whyseman/node-changes/issues"
   },
-  "homepage": "https://github.com/VladimirDev93/node-changes",
+  "homepage": "https://github.com/whyseman/node-changes",
   "author": "Vladimir Jovanović",
   "license": "CC BY 3.0",
   "dependencies": {
-    "chalk": "^4.0.0",
-    "commander": "^5.1.0",
-    "got": "^11.1.4",
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "got": "^11.7.0",
     "markdown-cli": "^1.6.0"
   }
 }
