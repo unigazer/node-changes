@@ -26,6 +26,7 @@
     "chalk": "^4.1.0",
     "commander": "^6.1.0",
     "got": "^11.7.0",
-    "markdown-cli": "^1.6.0"
+    "marked": "^1.2.6",
+    "marked-terminal": "^4.1.0"
   }
 }

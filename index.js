@@ -2,12 +2,18 @@
 
 // Imports
 const got = require('got');
-const markdown = require('markdown-cli');
+const marked = require('marked');
+const TerminalRenderer = require('marked-terminal');
 const program = require('commander');
 const chalk = require('chalk');
 
+marked.setOptions({
+    // Define custom renderer
+    renderer: new TerminalRenderer(),
+});
+
 // Detect loacal Node version
-var localVer = process.version;
+const localVer = process.version;
 
 // Get the release log
 async function getChangelog(tag) {
@@ -28,9 +34,9 @@ async function getChangelog(tag) {
         // Print to terminal
         console.log(chalk.bgGreen(chalk.black(`\n Changelog for ${tag} \n`)));
         console.log(`Released on ${chalk.green.bold(releaseDate)} \n`);
-        console.log(`${markdown(data.body)}`);
+        console.log(`${marked(data.body)}`);
     } catch (error) {
-        return console.error(error)
+        return console.error(error);
     }
 };
 
@@ -38,12 +44,12 @@ async function getChangelog(tag) {
 program
     .option('-c, --current', 'Get changelog for the local version')
     .option('-t, --tag [ver]', 'Get changelog for the particular release')
-    .parse(process.argv)
+    .parse(process.argv);
 
 if (program.current) {
     // Local Node.js version
-    getChangelog(localVer)
+    getChangelog(localVer);
 } else {
     // Release with a specific tag
-    getChangelog(program.tag)
+    getChangelog(program.tag);
 }
