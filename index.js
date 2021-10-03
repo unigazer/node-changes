@@ -1,19 +1,16 @@
 #!/usr/bin/env node
 
 // Imports
-const got = require('got');
-const marked = require('marked');
-const TerminalRenderer = require('marked-terminal');
-const program = require('commander');
-const chalk = require('chalk');
+import got from 'got';
+import marked from 'marked';
+import TerminalRenderer from 'marked-terminal';
+import { program } from 'commander';
+import chalk from 'chalk';
 
 marked.setOptions({
     // Define custom renderer
     renderer: new TerminalRenderer(),
 });
-
-// Detect loacal Node version
-const localVer = process.version;
 
 // Get the release log
 async function getChangelog(tag) {
@@ -42,14 +39,18 @@ async function getChangelog(tag) {
 
 // CLI flags
 program
-    .option('-c, --current', 'Get changelog for the local version')
     .option('-t, --tag [ver]', 'Get changelog for the particular release')
     .parse(process.argv);
 
-if (program.current) {
+const options = program.opts();
+
+if (options.tag) {
+    // Release with a specific tag
+    getChangelog(options.tag);
+} else {
+    // Detect local Node version
+    const localVer = process.version
+
     // Local Node.js version
     getChangelog(localVer);
-} else {
-    // Release with a specific tag
-    getChangelog(program.tag);
 }
