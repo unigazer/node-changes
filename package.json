@@ -1,7 +1,7 @@
 {
   "name": "node-changes",
   "version": "3.0.1",
-  "description": "Prints the changelog for current or for the specific version of Node.js relase.",
+  "description": "Prints the changelog for current or for the specific version of Node.js release.",
   "preferGlobal": true,
   "type": "module",
   "bin": {
@@ -15,14 +15,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/whyseman/node-changes"
+    "url": "https://github.com/unigazer/node-changes"
   },
   "bugs": {
-    "url": "https://github.com/whyseman/node-changes/issues"
+    "url": "https://github.com/unigazer/node-changes/issues"
   },
-  "homepage": "https://github.com/whyseman/node-changes",
+  "homepage": "https://github.com/unigazer/node-changes",
   "author": "Vladimir Jovanović",
-  "license": "CC BY 3.0",
+  "license": "CC BY 4.0",
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^8.2.0",
