@@ -14,7 +14,7 @@ marked.setOptions({
 
 // Get the release log
 async function getChangelog(tag) {
-    const json = await got(`https://api.github.com/repos/nodejs/node/releases/tags/${tag}`);
+    const json = await got(`https://api.github.com/repos/nodejs/node/releases/tags/v${tag}`);
     try {
         // Store the response
         const data = JSON.parse(json.body);
@@ -49,7 +49,7 @@ if (options.tag) {
     getChangelog(options.tag);
 } else {
     // Detect local Node version
-    const localVer = process.version
+    const localVer = process.version.substring(1);
 
     // Local Node.js version
     getChangelog(localVer);
