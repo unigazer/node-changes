@@ -2,7 +2,7 @@
 
 // Imports
 import got from 'got';
-import marked from 'marked';
+import { marked } from 'marked';
 import TerminalRenderer from 'marked-terminal';
 import { program } from 'commander';
 import chalk from 'chalk';
