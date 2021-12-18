@@ -28,6 +28,6 @@
     "commander": "^8.3.0",
     "got": "^12.0.0",
     "marked": "^4.0.0",
-    "marked-terminal": "^4.2.0"
+    "marked-terminal": "^5.0.0"
   }
 }
