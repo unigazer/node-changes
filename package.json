@@ -24,10 +24,10 @@
   "author": "Vladimir Jovanović",
   "license": "CC BY 4.0",
   "dependencies": {
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.0",
     "commander": "^8.3.0",
     "got": "^12.0.0",
-    "marked": "^4.0.0",
+    "marked": "^4.0.8",
     "marked-terminal": "^5.0.0"
   }
 }
