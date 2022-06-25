@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/unigazer/node-changes/issues"
   },
+  "engines": {
+    "node": ">=14"
+  },
   "homepage": "https://github.com/unigazer/node-changes",
   "author": "Vladimir Jovanović",
   "license": "CC BY 4.0",
