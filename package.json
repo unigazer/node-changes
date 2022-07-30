@@ -31,6 +31,7 @@
     "commander": "^9.4.0",
     "got": "^12.3.0",
     "marked": "^4.0.18",
-    "marked-terminal": "^5.1.1"
+    "marked-terminal": "^5.1.1",
+    "ora": "^6.1.2"
   }
 }
