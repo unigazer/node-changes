@@ -25,6 +25,10 @@ $ node-changes
 ``` 
 to get the changelog for the version on your machine.
 
+## Interaction
+
+You can click on the commit hash (Ctrl + click or Super + click) and it will launch a browser instance with a direct link to the commit hash.
+
 ## Example
 
 ![terminal_execution](assets/example.png)
