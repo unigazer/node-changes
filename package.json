@@ -29,8 +29,8 @@
   "dependencies": {
     "chalk": "^5.0.1",
     "commander": "^9.4.0",
-    "got": "^12.3.0",
-    "marked": "^4.0.18",
+    "got": "^12.3.1",
+    "marked": "^4.1.0",
     "marked-terminal": "^5.1.1",
     "ora": "^6.1.2"
   }
