@@ -21,7 +21,7 @@
     "url": "https://github.com/unigazer/node-changes/issues"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">= 18"
   },
   "homepage": "https://github.com/unigazer/node-changes",
   "author": "Vladimir Jovanović",
@@ -29,7 +29,6 @@
   "dependencies": {
     "chalk": "^5.2.0",
     "commander": "^10.0.0",
-    "got": "^12.5.3",
     "marked": "^4.2.5",
     "marked-terminal": "^5.1.1",
     "ora": "^6.1.2"

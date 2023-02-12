@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 // Imports
-import got from 'got';
 import { marked } from 'marked';
 import TerminalRenderer from 'marked-terminal';
 import { program } from 'commander';
@@ -18,11 +17,11 @@ async function getChangelog(tag) {
     const spinner = ora(`Fetching the changelog for v${tag}`);
 
     try {
-        const json = await got(`https://api.github.com/repos/nodejs/node/releases/tags/v${tag}`);
+        const res = await fetch(`https://api.github.com/repos/nodejs/node/releases/tags/v${tag}`);
         // Start the spinner animation
         spinner.start();
         // Store the response
-        const data = JSON.parse(json.body);
+        const data = await res.json();
         // Format the publish date
         const releaseDate = new Intl.DateTimeFormat('en-US', {
             year: 'numeric',
