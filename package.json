@@ -28,9 +28,9 @@
   "license": "CC BY 4.0",
   "dependencies": {
     "chalk": "^5.2.0",
-    "commander": "^10.0.0",
-    "marked": "^4.2.12",
+    "commander": "^10.0.1",
+    "marked": "^4.3.0",
     "marked-terminal": "^5.1.1",
-    "ora": "^6.1.2"
+    "ora": "^6.3.0"
   }
 }
