@@ -14,6 +14,13 @@ export default async function getChangelog(tag) {
     spinner.start();
     // Store the response
     const data = await res.json();
+
+    if (data.message === 'Not Found') {
+      spinner.stop();
+      ora().fail(chalk.red.bold(`Error: The changelog for the version v${tag} was not found.`))
+      return;
+    }
+
     // Format the publish date
     const releaseDate = new Intl.DateTimeFormat('en-US', {
       year: 'numeric',
