@@ -8,6 +8,8 @@ import getChangelog from './utils/getChangelog.js';
 marked.setOptions({
   // Define custom renderer
   renderer: new TerminalRenderer(),
+  mangle: false,
+  headerIds: false
 });
 
 // CLI flags
