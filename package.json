@@ -27,9 +27,8 @@
   "author": "Vladimir Jovanović",
   "license": "CC BY 4.0",
   "dependencies": {
-    "chalk": "^5.2.0",
     "commander": "^11.0.0",
-    "marked": "^6.0.0",
+    "marked": "^5.1.2",
     "marked-terminal": "^5.2.0",
     "ora": "^7.0.1"
   }
