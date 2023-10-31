@@ -1,6 +1,6 @@
 {
   "name": "node-changes",
-  "version": "3.7.1",
+  "version": "3.7.2",
   "description": "Prints the changelog for current or for the specific version of Node.js release.",
   "preferGlobal": true,
   "type": "module",
