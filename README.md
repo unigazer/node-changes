@@ -17,6 +17,7 @@ Usage: node-changes [options]
 
 Options:
   -t, --tag [ver]  Get changelog for the particular release
+  -l, --list       List available Node.js releases
 
 $ node-changes -t 18.12.0
 ```

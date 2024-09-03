@@ -15,6 +15,7 @@ marked.setOptions({
 // CLI flags
 program
   .option('-t, --tag [ver]', 'Get changelog for the particular release')
+  .option('-l, --list', 'List available Node.js releases')
   .parse(process.argv);
 
 const options = program.opts();
@@ -22,6 +23,9 @@ const options = program.opts();
 if (options.tag) {
   // Release with a specific tag
   getChangelog(options.tag);
+} else if (options.list) {
+  // List all available releases
+  import('./utils/getList.js').then((mod) => mod.default());
 } else {
   // Detect local Node version
   const localVer = process.version.substring(1);
